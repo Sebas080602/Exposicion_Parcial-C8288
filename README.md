@@ -24,7 +24,7 @@ Los **principios SOLID** son un conjunto de cinco principios fundamentales de di
 
 ## Code Smells
 
-Los **code smells** son indicios de posibles problemas en el código que no necesariamente causan errores, pero afectan negativamente la mantenibilidad y escalabilidad del sistema. En el código base proporcionado se detectaron los siguientes code smells:
+Los **code smells** son indicios de posibles problemas en el código que no necesariamente causan errores, pero afectan negativamente la mantenibilidad y escalabilidad del sistema. En el código base se detectaron los siguientes code smells:
 
 - **Responsabilidades múltiples en una sola clase**: La clase `Usuario` tiene métodos que no deberían pertenecer a ella, como `enviarCorreo` y `validarPedido`, lo que viola el principio SRP.
 - **Falta de extensibilidad**: El método `esAdmin()` limita el uso de roles y requiere modificaciones cada vez que se agregan nuevos roles, lo que viola el principio OCP.
@@ -34,7 +34,7 @@ Los **code smells** son indicios de posibles problemas en el código que no nece
 
 #### Inicialización del proyecto
 
-Para inicializar el proyecto, ejecutamos el siguiente comando:
+Como paso previo, tenemos que inicializar el proyecto, y para eso ejecutamos el siguiente comando:
 
 ```bash
 npm init -y
@@ -120,7 +120,7 @@ Hasta este punto, el proyecto ha sido configurado correctamente, y estamos listo
 
 #### Análisis inicial del código base
 
-El código base proporcionado se encontraba en el archivo `index.ts`, el cual tenía varios problemas de diseño que violaban los principios SOLID. El análisis inicial identificó los siguientes **code smells**:
+El código base, el cual se encontraba en el archivo `index.ts`, tenía varios problemas de diseño que violaban los principios SOLID. El análisis inicial identificó los siguientes **code smells**:
 
 1. **Responsabilidades múltiples (SRP)**: 
     - La clase `Usuario` gestionaba no solo la información del usuario, sino también el envío de correos y la validación de pedidos. Esto rompe el principio de **Responsabilidad Única (SRP)**, ya que una clase debería tener solo una razón para cambiar.
@@ -329,4 +329,9 @@ Este comando ejecuta ESLint en todos los archivos del proyecto, revisando posibl
 - Todos los problemas fueron corregidos, garantizando que el código es consistente, seguro y fácil de mantener.
 
 ### Conclusión
-El proyecto ha sido completamente refactorizado y optimizado siguiendo los principios SOLID. Las pruebas unitarias se han añadido para garantizar que el código funcione como se espera, y se ha utilizado ESLint para mantener la calidad del código a través de análisis estático. El proyecto está listo para su presentación y demostración en vivo.
+- El proyecto ha sido completamente refactorizado y optimizado siguiendo los principios SOLID. 
+- Las pruebas unitarias se han añadido para garantizar que el código funcione como se espera, y se ha utilizado ESLint para mantener la calidad del código a través de análisis estático.
+
+Muchas gracias!
+
+**Autor**: Sebastián Saldaña Rodríguez

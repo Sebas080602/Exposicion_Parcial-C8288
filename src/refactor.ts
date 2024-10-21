@@ -76,14 +76,14 @@ const pedido1 = new Pedido(999);
 pedido1.validarPedido();  // Pedido 999 es válido.
 
 // Creamos una instancia de un usuario y mostramos su información.
-const usuario = new Usuario(1, "John Doe", "john@example.com", "admin");
+const usuario = new Usuario(1, "Sebas", "sebas@example.com", "admin");
 usuario.obtenerInfoUsuario();  // Usuario: John Doe, Correo: john@example.com, Rol: admin
 
 // Creamos una instancia de un usuario premium y mostramos su información.
-const usuarioPremium = new UsuarioPremium(2, "Jane Smith", "jane@example.com", "premium", 150);
+const usuarioPremium = new UsuarioPremium(2, "Gonzalo", "gonzalo@example.com", "premium", 150);
 usuarioPremium.obtenerInfoUsuario();  // Usuario Premium: Jane Smith, Puntos: 150
 usuarioPremium.canjearPuntos();  // Jane Smith ha canjeado 150 puntos.
 
 // Creamos una instancia del servicio de correo y enviamos un correo.
 const servicioCorreo = new ServicioCorreo();
-servicioCorreo.enviarCorreo("jane@example.com", "Bienvenida", "¡Bienvenida a nuestro sistema!");  // Enviando correo a jane@example.com con asunto: Bienvenida
+servicioCorreo.enviarCorreo("sebas@example.com", "Bienvenida", "¡Bienvenida a nuestro sistema!");  // Enviando correo a jane@example.com con asunto: Bienvenida
