@@ -22,6 +22,8 @@ Los **principios SOLID** son un conjunto de cinco principios fundamentales de di
 4. **Interface Segregation Principle (ISP)**: Los clientes no deberían depender de interfaces que no utilizan.
 5. **Dependency Inversion Principle (DIP)**: Los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deben depender de abstracciones.
 
+Explicaremos cada uno de estos principios en el proyecto de refactorización **(SRP, OCP, LSP)**, así como en ejemplos específicos **(ISP, DIP)**, esto para que se logre entender mejor.
+
 ## Code Smells
 
 Los **code smells** son indicios de posibles problemas en el código que no necesariamente causan errores, pero afectan negativamente la mantenibilidad y escalabilidad del sistema. En el código base se detectaron los siguientes code smells:
@@ -114,8 +116,27 @@ PROYEC_EXPO/
 
 Hasta este punto, el proyecto ha sido configurado correctamente, y estamos listos para comenzar con la refactorización del código base aplicando los principios SOLID.
 
----
 
+Pero antes, veremos los principios ISP y DIP ya que complementan los tres primeros principios que serán explicados en el transcurso del proyecto.
+
+#### Código del principio ISP: `isp-example.ts`
+##### 1. Principio de Segregación de Interfaces (ISP)
+- **Archivo**: `src/isp-example.ts`
+- **Descripción**: Vemos que en cambio de una única interfaz grande que obliga a las clases a implementar métodos innecesarios, hemos creado interfaces pequeñas y específicas para que cada clase implemente solo lo que necesita.
+- **Uso**:
+```bash
+npx ts-node src/isp-example.ts
+```
+#### Código del principio DIP: `dip-example.ts`
+##### 2. Principio de Inversión de Dependencias (DIP)
+- **Archivo**: `src/dip-example.ts`
+- **Descripción**: Aquí nos muestra que, en lugar de depender de implementaciones concretas, la clase `ComputadoraDIP` depende de la abstracción `Teclado`. Esto permite flexibilidad para cambiar entre diferentes tipos de teclados sin modificar el código de la computadora.
+- **Uso**:
+```bash
+npx ts-node src/dip-example.ts
+```
+---
+Habiendo definido y explicado estos principios fundamentales, es hora de implementarlos en nuestro proyecto. **Let's start!** 
 ## Paso 2: Refactorización del código base y aplicación de los principios SOLID
 
 #### Análisis inicial del código base
