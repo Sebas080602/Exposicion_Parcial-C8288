@@ -36,19 +36,19 @@ interface Vendedor {
 }
 
 // Implementaciones correctas según ISP
-class DesarrolladorISP implements Programador {
+export class DesarrolladorISP implements Programador {
     programar() {
         console.log('Estoy programando');
     }
 }
 
-class Gerente implements Administrador {
+export class Gerente implements Administrador {
     administrar() {
         console.log('Estoy administrando');
     }
 }
 
-class Comerciante implements Vendedor {
+export class Comerciante implements Vendedor {
     vender() {
         console.log('Estoy vendiendo');
     }

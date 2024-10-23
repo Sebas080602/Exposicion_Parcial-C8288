@@ -24,19 +24,19 @@ interface Teclado {
     getTeclaPresionada(): string;
 }
 
-class TecladoMecanicoDIP implements Teclado {
+export class TecladoMecanicoDIP implements Teclado {
     getTeclaPresionada() {
         return 'Tecla A';
     }
 }
 
-class TecladoMembranaDIP implements Teclado {
+export class TecladoMembranaDIP implements Teclado {
     getTeclaPresionada() {
         return 'Tecla B';
     }
 }
 
-class ComputadoraDIP {
+export class ComputadoraDIP {
     private teclado: Teclado;
 
     constructor(teclado: Teclado) {
