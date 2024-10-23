@@ -322,7 +322,7 @@ Para asegurar que el código sigue las mejores prácticas y no contiene errores 
 
 ### Configuración de ESLint:
 
-Se creó y configuró un archivo `eslint.config.mjs` que contiene las reglas y ajustes personalizados para el proyecto.
+Se creó y configuró un archivo `eslint.config.mjs` que contiene las reglas y ajustes para el proyecto.
 
 ```js
 import globals from "globals";
