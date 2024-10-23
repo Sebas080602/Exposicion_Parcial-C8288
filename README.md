@@ -101,23 +101,21 @@ Este comando generó el archivo `jest.config.js` que permite definir configuraci
 La estructura del proyecto se organizó de la siguiente manera:
 
 PROYEC_EXPO/
-│
-├── src/
-│   ├── index.ts          # Código original
-│   ├── refactor.ts       # Código refactorizado
-│
-├── tests/
-│   └── index.test.ts     # Pruebas unitarias
-├── jest.config.js        # Configuración de Jest para pruebas
-├── package.json          # Configuración del proyecto y dependencias
-├── tsconfig.json         # Configuración de TypeScript
-└── README.md             # Documentación del proyecto
+- src/
+  - index.ts 
+  - refactor.ts
+  - refactor.js
+  - dip-example.ts
+  - isp-example.ts
+- tests/
+  - index.test.ts
+- jest.config.js 
+- package.json 
+- tsconfig.json
+- eslint.config.mjs 
+- README.md
 
-
-Hasta este punto, el proyecto ha sido configurado correctamente, y estamos listos para comenzar con la refactorización del código base aplicando los principios SOLID.
-
-
-Pero antes, veremos los principios ISP y DIP ya que complementan los tres primeros principios que serán explicados en el transcurso del proyecto.
+Hasta este punto, el proyecto ha sido configurado correctamente, y estamos listos para comenzar con la refactorización del código base aplicando los principios SOLID. Sin embargo, antes, veremos los principios ISP y DIP, ya que complementan los tres primeros principios que serán explicados en el transcurso del proyecto.
 
 #### Código del principio ISP: `isp-example.ts`
 ##### 1. Principio de Segregación de Interfaces (ISP)
