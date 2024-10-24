@@ -370,4 +370,9 @@ Este comando ejecuta ESLint en todos los archivos del proyecto, revisando posibl
 3. **Carpeta TypeScript** - *Tipos, interfaces, POO*: `Tipos-POO.pdf`
 
 ---
+
+**Curso**: Desarrollo web - C8288
+
+**Docente**: Cesar Lara
+
 **Autor**: Sebastián Saldaña Rodríguez
