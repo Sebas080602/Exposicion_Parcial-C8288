@@ -371,5 +371,3 @@ Este comando ejecuta ESLint en todos los archivos del proyecto, revisando posibl
 
 ---
 **Autor**: Sebastián Saldaña Rodríguez
-
-Muchas gracias!
