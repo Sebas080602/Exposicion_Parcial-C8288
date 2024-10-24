@@ -351,6 +351,25 @@ Este comando ejecuta ESLint en todos los archivos del proyecto, revisando posibl
 - El proyecto ha sido completamente refactorizado y optimizado siguiendo los principios SOLID. 
 - Las pruebas unitarias se han añadido para garantizar que el código funcione como se espera, y se ha utilizado ESLint para mantener la calidad del código a través de análisis estático.
 
-Muchas gracias!
+---
 
+
+### Referencias
+
+##### Artículos en línea en la carpeta `Pruebas con Jest`:
+1. [Pirámide de pruebas prácticas - Martin Fowler](https://martinfowler.com/articles/practical-test-pyramid.html)
+2. [Unit Testing in Node.js](https://brightsec.com/blog/unit-testing-in-nodejs/)
+
+##### Repositorio del curso:
+1. [Actividades - Semana 4](https://github.com/kapumota/Actividades-C8288/blob/main/Semana4/Ejemplos.ts)
+2. [Código de Clase - Semana 3](https://github.com/kapumota/Actividades-C8288/blob/main/Semana3/CodigoClase.ts)
+
+##### Lecturas del curso:
+1. **Carpeta JavaScript** - *Actividad 2: Creación y configuración de un proyecto node.js con Express.js*: `Actividad2.pdf`
+2. **Carpeta JavaScript** - *Actividad 4: Fundamentos de JavaScript*: `Actividad4.pdf`
+3. **Carpeta TypeScript** - *Tipos, interfaces, POO*: `Tipos-POO.pdf`
+
+---
 **Autor**: Sebastián Saldaña Rodríguez
+
+Muchas gracias!
